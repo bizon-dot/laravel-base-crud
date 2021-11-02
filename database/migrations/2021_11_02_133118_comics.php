@@ -14,12 +14,18 @@ class Comics extends Migration
     public function up()
     {
         Schema::create('comics', function (Blueprint $table) {
+           
             $table->id();
             $table->string('title');
-            $table->string('author');
-            $table->string('publisher');
-            $table->year('year');
+            $table->longText('thumb')->nullable();
+            $table->longText('description');
+            $table->string('price');
+            $table->string('series');
+            $table->date('sale_date');
+            $table->string('type');
             $table->timestamps();
+
+            
         });
     }
 

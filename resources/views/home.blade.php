@@ -6,6 +6,6 @@
         <title>Comics</title>
     </head>
     <body>
-        
+        {{ dd($comics)}}
     </body>
 </html>
