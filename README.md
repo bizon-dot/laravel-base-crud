@@ -11,9 +11,9 @@
 
 - [X] Creare un nuovo progetto Laravel 7 e tramite gli appositi comandi artisan create un model con relativa migration e un resource controller.
 - [X] Iniziare a definire le operazioni CRUD per gestire un archivio di fumetti.
-        * [X] index
-        * [ ] show
-        * [ ] create
-        * [ ] edit
+        - [X] index
+        - [ ] show
+        - [ ] create
+        - [ ] edit
 
 - [ ] Bonus: creare il seeder per la tabella comics utilizzando il file in allegato.
