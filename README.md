@@ -13,8 +13,8 @@
 - [X] Iniziare a definire le operazioni CRUD per gestire un archivio di fumetti.
   
   - [X] index()      
-  - [ ] show()
-  - [ ] create()
+  - [X] show()
+  - [X] create()
   - [ ] delete()
   - [ ] edit()
        
