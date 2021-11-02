@@ -1,2 +1,9 @@
 //Import bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap';
+
+//FontAwesome
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+td, th{
+vertical-align: middle;
+}
