@@ -13,5 +13,5 @@
 - [X] Iniziare a definire le operazioni CRUD per gestire un archivio di fumetti.
        
        
-- [ ] Bonus: creare il seeder per la tabella comics utilizzando il file in allegato.
+- [X] Bonus: creare il seeder per la tabella comics utilizzando il file in allegato.
 
