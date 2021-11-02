@@ -19,7 +19,11 @@
                 @foreach ($comics as $comic)
                 <tr>
                     <th scope="row">{{$comic["id"]}}</th>
-                    <th scope="row">{{$comic["title"]}}</th>
+                    <th scope="row">
+                        <a href="{{route("comics.show", $comic["id"])}}">
+                            {{$comic["title"]}}
+                        </a>
+                    </th>
                     <th scope="row">{{$comic["description"]}}</th>
                     <th scope="row">{{$comic["price"]}}</th>
                     <th scope="row">{{$comic["series"]}}</th>
