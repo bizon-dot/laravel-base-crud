@@ -25,7 +25,7 @@
                     <th scope="row">{{$comic["series"]}}</th>
                     <th scope="row">{{$comic["type"]}}</th>
                     <th scope="row">{{$comic["sale_date"]}}</th>
-                    <td style="display:fleinlx; ">
+                    <td>
                         <a><i class="far fa-eye"></i></a>
                         <a><i class="fas fa-edit"></i></a>
                         <a><i class="far fa-trash-alt"></i></a>
