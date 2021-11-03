@@ -9,8 +9,11 @@
   - [X] index()      
   - [X] show()
   - [X] create()
+  - [ ] store()
   - [ ] delete()
   - [ ] edit()
        
 - [X] Bonus: creare il seeder per la tabella comics utilizzando il file in allegato.
+- [ ] Bonus: integrare  la parte di validation.
+- [ ] Bonus: tramite javascript, quando l'utente clicca sul pulsante "delete", chiedere conferma della cancellazione, prima di eliminare l'elemento
 
