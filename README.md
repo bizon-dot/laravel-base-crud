@@ -9,7 +9,7 @@
   - [X] index()      
   - [X] show()
   - [X] create()
-  - [ ] store()
+  - [X] store()
   - [ ] delete()
   - [ ] edit()
        
