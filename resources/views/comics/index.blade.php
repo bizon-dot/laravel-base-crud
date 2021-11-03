@@ -29,16 +29,23 @@
                     <th scope="row">{{$comic["series"]}}</th>
                     <th scope="row">{{$comic["type"]}}</th>
                     <th scope="row">{{$comic["sale_date"]}}</th>
-                    <td >
+                    <td>
                         <a href="{{route("comics.show", $comic["id"])}}">
                             <i class="far fa-eye"></i>
                         </a>
                         <a>
                             <i class="fas fa-edit"></i>
                         </a>
-                        <a>
-                            <i class="far fa-trash-alt"></i>
-                        </a>
+
+
+                        <form method="post" action="{{ route('comics.destroy', $comic['id']) }}">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger"> <i class="far fa-trash-alt"></i>
+                            </button>
+
+
+                        </form>
                     </td>
                 </tr>
 

@@ -10,7 +10,7 @@
   - [X] show()
   - [X] create()
   - [X] store()
-  - [ ] delete()
+  - [X] delete()
   - [ ] edit()
        
 - [X] Bonus: creare il seeder per la tabella comics utilizzando il file in allegato.
