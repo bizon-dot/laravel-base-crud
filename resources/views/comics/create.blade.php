@@ -19,30 +19,36 @@
 
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" name="title" class="form-control" id="title" placeholder="Enter title">
+                    <input type="text" name="title" class="form-control" value = "{{ old('title') }}" id="title" placeholder="Enter title">
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <input type="text" name="description" class="form-control" id="description"
-                        placeholder="Enter description">
+
+                    <textarea class="form-control" id="description" name="description">
+                        {{ old('description') }}
+                    </textarea>
                 </div>
                 <div class="form-group">
                     <label for="type">Type</label>
-                    <input type="text" name="type" class="form-control" id="type" placeholder="Enter type">
+                    <input type="text" name="type" class="form-control" value = "{{ old('type') }}" id="type" placeholder="Enter type">
                 </div>
                 <div class="form-group">
                     <label for="series">Series</label>
-                    <input type="text" name="series" class="form-control" id="series" placeholder="Enter series">
+                    <input type="text" name="series" class="form-control" value = "{{ old('series') }}" id="series" placeholder="Enter series">
                 </div>
                 <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="text" name="price" class="form-control" id="price" placeholder="Enter price">
+                    <input type="text" name="price" class="form-control" value = "{{ old('price') }}" id="price" placeholder="Enter price">
                 </div>
                 <div class="form-group">
                     <label for="date">Sale date</label>
-                    <input type="date" name="sale_date" id="sale_date">
+                    <input type="date" class="form-control" value = "{{ old('sale_date') }}" name="sale_date" id="sale_date">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="row">
+                    <div class="col-12 d-flex p-2 justify-content-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

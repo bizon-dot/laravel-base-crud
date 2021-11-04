@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('comics/delete/{id}', ['ComicsController', 'delete'])->name('delete');
+
 Route::resource('/comics', 'ComicsController');

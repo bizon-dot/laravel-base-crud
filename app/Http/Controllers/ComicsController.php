@@ -111,4 +111,6 @@ class ComicsController extends Controller
         $comic -> delete();
         return redirect()->route("comics.index");
     }
+
+    
 }

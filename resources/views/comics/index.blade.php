@@ -30,6 +30,7 @@
                     <th scope="row">{{$comic["type"]}}</th>
                     <th scope="row">{{$comic["sale_date"]}}</th>
                     <td>
+                       
                         <a href="{{route("comics.show", $comic["id"])}}">
                             <i class="far fa-eye"></i>
                         </a>
@@ -37,7 +38,17 @@
                             <i class="fas fa-edit"></i>
                         </a>
 
+                        <form method="POST" action="{{ route('comics.destroy', $comic["id"]) }}">
 
+                            @csrf
+
+                            <input name="_method" type="hidden" value="DELETE">
+
+                            <button type="submit" class="btn btn-xs btn-danger btn-flat show_confirm" data-toggle="tooltip" title='Delete'>Delete</button>
+
+                        </form>
+
+{{-- 
                         <form method="post" action="{{ route('comics.destroy', $comic['id']) }}">
                             @csrf
                             @method('DELETE')
@@ -45,7 +56,7 @@
                             </button>
 
 
-                        </form>
+                        </form> --}}
                     </td>
                 </tr>
 
@@ -54,5 +65,4 @@
         </div>
     </div>
 </div>
-
 @endsection
